@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+
+    <!-- Unidade de persistencia da parte 1 do curso (Somente JPA)-->
+    <persistence-unit name="part1-DIO">
+
+        <description> Unidade de persistencia da parte 1 do tutorial basico de JPA da Digital Innovation One sem implementacoes (Somente JPA) </description>
+
+        <!-- Classes (entidades) que serao mapeadas -->
+        <class>classes.Aluno</class>
+        <class>classes.Estado</class>
+
+        <!-- Configuracoes de conexao ao banco de dados -->
+        <properties>
+            <!-- Configuracoes do banco de dados -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/digital_innovation_one" />
+            <property name="javax.persistence.jdbc.user" value="Mirror" />
+            <property name="javax.persistence.jdbc.password" value="go1986" />
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
+        </properties>
+
+    </persistence-unit>
+</persistence>
